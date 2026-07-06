@@ -1,0 +1,9 @@
+{
+  "name": "MetroCraft Group",
+  "short_name": "MetroCraft",
+  "description": "Building India's Infrastructure Future",
+  "display": "browser",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
