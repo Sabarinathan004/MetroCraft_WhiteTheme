@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-text-primary antialiased;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply mx-auto w-full max-w-container px-6;
+  }
+
+  .section-label {
+    @apply text-label font-semibold uppercase text-gold;
+  }
+
+  .section-heading {
+    @apply text-[28px] font-bold leading-tight text-navy sm:text-[36px] lg:text-section;
+  }
+
+  .btn-primary {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-navy px-6 text-sm font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:bg-navy-dark hover:shadow-card;
+  }
+
+  .btn-outline {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-lg border-2 border-navy bg-white px-6 text-sm font-semibold uppercase tracking-wide text-navy transition-all duration-300 hover:bg-navy hover:text-white;
+  }
+
+  .btn-gold {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-gold px-8 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-gold-light hover:shadow-card;
+  }
+
+  .card-base {
+    @apply rounded-card bg-white shadow-card;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Swiper overrides */
+.swiper-button-disabled {
+  opacity: 0.4 !important;
+  cursor: not-allowed !important;
+}
+
+.projects-swiper .swiper-slide {
+  height: auto;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
